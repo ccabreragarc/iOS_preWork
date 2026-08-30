@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iOS Prework Preview</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #e8f7fb;
+      color: #111827;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .phone {
+      width: 393px;
+      min-height: 852px;
+      background: #fff;
+      border: 12px solid #111827;
+      border-radius: 42px;
+      box-shadow: 0 24px 60px rgba(15, 23, 42, .24);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .screen {
+      padding: 58px 24px 30px;
+    }
+
+    .logo {
+      display: block;
+      width: 343px;
+      height: 128px;
+      object-fit: contain;
+      margin: 20px auto 54px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 23px;
+    }
+
+    label {
+      font-size: 17px;
+    }
+
+    input {
+      height: 34px;
+      border: 1px solid #c8c8cc;
+      border-radius: 7px;
+      padding: 0 10px;
+      font-size: 17px;
+      box-sizing: border-box;
+    }
+
+    .segments {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid #0a84ff;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 10px 0 24px;
+      color: #0a84ff;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .segments span {
+      padding: 7px 2px;
+      border-left: 1px solid #0a84ff;
+    }
+
+    .segments span:first-child {
+      border-left: 0;
+      background: #0a84ff;
+      color: white;
+    }
+
+    .control-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0;
+      font-size: 17px;
+    }
+
+    .stepper {
+      display: inline-flex;
+      border: 1px solid #0a84ff;
+      border-radius: 8px;
+      color: #0a84ff;
+      overflow: hidden;
+      font-size: 22px;
+      line-height: 30px;
+      margin-left: 14px;
+    }
+
+    .stepper span {
+      width: 44px;
+      text-align: center;
+    }
+
+    .stepper span + span {
+      border-left: 1px solid #0a84ff;
+    }
+
+    .switch {
+      width: 49px;
+      height: 31px;
+      border-radius: 20px;
+      background: #34c759;
+      position: relative;
+    }
+
+    .switch:after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 27px;
+      height: 27px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 1px 3px rgba(0,0,0,.28);
+    }
+
+    button {
+      width: 100%;
+      height: 44px;
+      border: 0;
+      border-radius: 8px;
+      background: #0a84ff;
+      color: #fff;
+      font-size: 17px;
+      margin-top: 22px;
+      cursor: default;
+    }
+
+    .note {
+      max-width: 460px;
+      margin-top: 18px;
+      color: #374151;
+      line-height: 1.45;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="phone">
+      <div class="screen">
+        <img class="logo" src="Assets.xcassets/FAULogo.imageset/Florida_Atlantic_Owls_logo.svg.png" alt="FAU logo">
+
+        <div class="row">
+          <label>First</label>
+          <input aria-label="First name">
+        </div>
+
+        <div class="row">
+          <label>Last</label>
+          <input aria-label="Last name">
+        </div>
+
+        <div class="row">
+          <label>School</label>
+          <input aria-label="School name">
+        </div>
+
+        <div class="segments" aria-label="Academic year">
+          <span>First</span>
+          <span>Second</span>
+          <span>Third</span>
+          <span>Fourth</span>
+        </div>
+
+        <div class="control-row">
+          <div>Pets <strong>0</strong></div>
+          <div class="stepper" aria-label="Pet count stepper"><span>-</span><span>+</span></div>
+        </div>
+
+        <div class="control-row">
+          <div>More Pets?</div>
+          <div class="switch" aria-label="More pets switch"></div>
+        </div>
+
+        <button>Introduce Self</button>
+      </div>
+    </div>
+
+    <p class="note">
+      This is a browser preview for Windows only. The real submitted app is the Xcode project in this same folder.
+    </p>
+  </main>
+</body>
+</html>
