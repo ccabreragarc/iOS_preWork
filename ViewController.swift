@@ -5,13 +5,6 @@
 //  Created by Kashish Madan on 11/20/23.
 //
 
-//
-//  ViewController.swift
-//  ios102prework
-//
-//  Created by Kashish Madan on 11/20/23.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -28,9 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         let defaults = UserDefaults.standard
-        firstName.text = "Hello"
         firstName.text = defaults.string(forKey: "FirstName")
         lastName.text = defaults.string(forKey: "LastName")
         schoolName.text = defaults.string(forKey: "SchoolName")
@@ -61,7 +52,7 @@ class ViewController: UIViewController {
         defaults.set(firstName.text, forKey: "FirstName")
         defaults.set(lastName.text, forKey: "LastName")
         defaults.set(schoolName.text, forKey: "SchoolName")
-        defaults.set(year, forKey: "Year")
+        defaults.set(academicYear.selectedSegmentIndex, forKey: "Year")
         defaults.set(petsCount.text, forKey: "PetsCount")
         defaults.set(morePetsSwitch.isOn, forKey: "MorePetsSwitch")
     }

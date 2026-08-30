@@ -1,31 +1,28 @@
-# iOS Intermediate Development: Introduce Yourself App
+# iOS Prework: Introduce Yourself
 
-Welcome to the **Introduce Yourself App**, a project for the iOS Intermediate Development course. This app is designed to help you learn the basics of navigating Xcode and Swift by allowing users to introduce themselves through various inputs. By the end of this project, you'll understand how storyboards and logic work together to create a functional app.
+## App Description
 
-## Features
+This is my CodePath IOS102 prework app. It lets a user enter personal introduction details, choose an academic year, select a pet count, choose whether they want more pets, and then generate an introduction alert.
 
-- **User Input**: Allows users to enter their first name, last name, and school name using text fields.
-- **Academic Year Selection**: Users can choose their academic year via a segmented control.
-- **Number of Pets**: Users can indicate the number of pets they own using a label and stepper.
-- **More Pets Option**: A switch allows users to specify if they want more pets.
-- **School Logo**: Displays an image of the user's school logo.
-- **Introduction Button**: A button generates a personalized introduction based on the user's inputs.
-- **Alert Presentation**: Displays an alert with the introduction message when the "Introduce Self" button is tapped.
+## App Walkthrough
 
-## How to Get Started
+Replace this placeholder with the final walkthrough GIF URL after recording:
 
-1. **Setup Xcode**: Download and install Xcode from the Mac App Store.
-2. **Familiarize with Swift**: Learn Swift basics using resources like Apple's Official Swift Guide and CodePath's Swift tutorials.
-3. **Build the App**:
-   - Create a new Xcode project with the "Storyboard" interface and "Swift" as the language.
-   - Design the UI in the storyboard by adding labels, text fields, segmented control, switch, stepper, button, and an image view.
-   - Connect these UI elements to your `ViewController.swift` file using IBOutlets and IBActions.
-   - Implement logic to handle user interactions and present an introduction using an alert.
+`https://i.imgur.com/your_walkthrough.gif`
 
-## Future Improvements
+## Required Features
 
-- Enhance the UI with different fonts, colors, and backgrounds.
-- Implement persistence to save user data across app sessions.
-- Add more fields to create a more comprehensive user introduction.
+- [x] User can input first name, last name, and school name into text fields.
+- [x] Screen shows a picture of a school logo/name.
+- [x] User can select the academic year from a segmented control.
+- [x] User can increase and decrease the number of pets label using a stepper.
+- [x] App presents an alert when the "Introduce Self" button is tapped.
 
-🎉 Congratulations on completing your first iOS app! Keep experimenting with new features and improvements to deepen your understanding of iOS development.
+## Optional Features
+
+- [x] App saves entered values with `UserDefaults` and restores them when reopened.
+- [x] App includes customized UI styling and a school logo asset.
+
+## Notes
+
+Submission requires the GitHub repository URL and a walkthrough GIF URL ending in `.gif`.
