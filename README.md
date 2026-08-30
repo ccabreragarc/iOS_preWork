@@ -6,9 +6,7 @@ This is my CodePath IOS102 prework app. It lets a user enter personal introducti
 
 ## App Walkthrough
 
-Replace this placeholder with the final walkthrough GIF URL after recording:
-
-`https://i.imgur.com/your_walkthrough.gif`
+![App Walkthrough](https://raw.githubusercontent.com/ccabreragarc/iOS_preWork/main/media/walkthrough.gif)
 
 ## Required Features
 
@@ -25,4 +23,6 @@ Replace this placeholder with the final walkthrough GIF URL after recording:
 
 ## Notes
 
-Submission requires the GitHub repository URL and a walkthrough GIF URL ending in `.gif`.
+Submission repository: https://github.com/ccabreragarc/iOS_preWork/
+
+Walkthrough GIF: https://raw.githubusercontent.com/ccabreragarc/iOS_preWork/main/media/walkthrough.gif
