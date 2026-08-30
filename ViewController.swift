@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  ios102prework
-//
-//  Created by Kashish Madan on 11/20/23.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
